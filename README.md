@@ -31,6 +31,29 @@ https://yuxuanyang.com/health
 5. npm install
 6. npm start
 
+
+## How does AppSync(GraphQL) work with React
+
+The GraphQL import the request from schema, and pull the record from cloud database.
+
+```js
+import { listBodyRecords } from "./graphql/queries";
+import {
+  createBodyRecord as createBodyRecordMutation,
+  updateBodyRecord as updateBodyRecordMutation,
+} from "./graphql/mutations";
+```
+
+The corresponding schema:
+```graphql
+type BodyRecord @model @auth(rules: [ { allow: public } ] ) {
+  id: ID!
+  height: Float!
+  weight: Float!
+  birthday: AWSDate!
+}
+```
+
 ## Usage
 1. Sign up and sign in to the app.
 2. Add or update personal body records (height, weight, birthday).
