@@ -46,3 +46,48 @@ export const deleteNote = /* GraphQL */ `
     }
   }
 `;
+export const createBodyRecord = /* GraphQL */ `
+  mutation CreateBodyRecord(
+    $input: CreateBodyRecordInput!
+    $condition: ModelBodyRecordConditionInput
+  ) {
+    createBodyRecord(input: $input, condition: $condition) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateBodyRecord = /* GraphQL */ `
+  mutation UpdateBodyRecord(
+    $input: UpdateBodyRecordInput!
+    $condition: ModelBodyRecordConditionInput
+  ) {
+    updateBodyRecord(input: $input, condition: $condition) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteBodyRecord = /* GraphQL */ `
+  mutation DeleteBodyRecord(
+    $input: DeleteBodyRecordInput!
+    $condition: ModelBodyRecordConditionInput
+  ) {
+    deleteBodyRecord(input: $input, condition: $condition) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;

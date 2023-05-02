@@ -32,3 +32,34 @@ export const listNotes = /* GraphQL */ `
     }
   }
 `;
+export const getBodyRecord = /* GraphQL */ `
+  query GetBodyRecord($id: ID!) {
+    getBodyRecord(id: $id) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listBodyRecords = /* GraphQL */ `
+  query ListBodyRecords(
+    $filter: ModelBodyRecordFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listBodyRecords(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        height
+        weight
+        birthday
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

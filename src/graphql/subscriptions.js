@@ -37,3 +37,45 @@ export const onDeleteNote = /* GraphQL */ `
     }
   }
 `;
+export const onCreateBodyRecord = /* GraphQL */ `
+  subscription OnCreateBodyRecord(
+    $filter: ModelSubscriptionBodyRecordFilterInput
+  ) {
+    onCreateBodyRecord(filter: $filter) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateBodyRecord = /* GraphQL */ `
+  subscription OnUpdateBodyRecord(
+    $filter: ModelSubscriptionBodyRecordFilterInput
+  ) {
+    onUpdateBodyRecord(filter: $filter) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteBodyRecord = /* GraphQL */ `
+  subscription OnDeleteBodyRecord(
+    $filter: ModelSubscriptionBodyRecordFilterInput
+  ) {
+    onDeleteBodyRecord(filter: $filter) {
+      id
+      height
+      weight
+      birthday
+      createdAt
+      updatedAt
+    }
+  }
+`;
