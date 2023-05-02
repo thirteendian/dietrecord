@@ -8,11 +8,13 @@ This is the project structure hold on AWS:
 ![](./figure.jpeg)
 
 ## Features
-User authentication with AWS Amplify+Cognito
-Create and manage personal body records
-Calculate age and BMI based on the closest body record
-Create and manage custom food items
-Add custom food items to daily food intake
+1. User authentication with AWS Amplify+Cognito
+2. Create and manage personal body records
+3. Calculate age and BMI based on the closest body record
+4. Create and manage custom food items
+5. Add custom food items to daily food intake
+6. Store images associated with notes
+7. Real-time updates with AWS AppSync and GraphQL
 
 ## How to Run the app
 Please visit the following link for the application through AWS API:
@@ -25,12 +27,26 @@ https://yuxuanyang.com/health
 ## How to Run Locally
 
 1. Install Node.js version 16 or later from Node.js website
-2. npm install -g @aws-amplify/cli
+2. Install the Amplify CLI:
+```sh
+npm install -g @aws-amplify/cli
+```
 3. clone the repo
 4. cd dietrecord
-5. npm install
-6. npm start
+5. Configure the amplify:
+```sh
+amplify configure
+amplify init
+amplify add auth
+amplify add api
+amplify push --y
+npm start
+```
 
+If your npm environment was not properly configured, you should run the following command in the project folder:
+```sh
+npm install
+```
 
 ## How does AppSync(GraphQL) work with React
 
