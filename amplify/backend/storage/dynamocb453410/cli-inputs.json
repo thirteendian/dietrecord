@@ -1,0 +1,14 @@
+{
+  "resourceName": "dynamocb453410",
+  "tableName": "dynamocb453410",
+  "partitionKey": {
+    "fieldName": "customFood",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "foodHistory",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
