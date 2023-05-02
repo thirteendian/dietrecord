@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Final Project: Diet Record App
+This project is a Diet Record app built using AWS Amplify and React. Users can create and manage personal body records, view their age, BMI, Body Fat, and create custom foods to add to their daily food intake.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is the project structure hold on AWS:
 
-In the project directory, you can run:
+![](./figure.jpeg)
 
-### `npm start`
+## Features
+User authentication with AWS Amplify+Cognito
+Create and manage personal body records
+Calculate age and BMI based on the closest body record
+Create and manage custom food items
+Add custom food items to daily food intake
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Run the app
+Please visit the following link for the application through AWS API:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://main.d3fuok9qvl92xs.amplifyapp.com/
 
-### `npm test`
+Also please visit the deployment of advanced version(Combined) on my personal web:
+https://yuxuanyang.com/health
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run Locally
 
-### `npm run build`
+1. Install Node.js version 16 or later from Node.js website
+2. npm install -g @aws-amplify/cli
+3. clone the repo
+4. cd dietrecord
+5. npm install
+6. npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+1. Sign up and sign in to the app.
+2. Add or update personal body records (height, weight, birthday).
+3. View your age and BMI calculated based on the closest body record.
+4. Add custom food items with their nutritional information.
+5. Edit or delete custom food items.
+6. Add custom food items to your daily food intake.
+7. Remove food items from your daily food intake.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
